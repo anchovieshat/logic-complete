@@ -32,7 +32,7 @@ def main():
         if (comp_str.endswith(" + ")):
             comp_str = comp_str[:-3]
 
-        print(("{}: {:0" + str(2**inputs) + "b}").format(comp_str, op))
+        print(("{:0" + str(2**inputs) + "b}: {}").format(op, comp_str))
     print("{} {}-ary ops".format(op+1, inputs))
 
 main()
